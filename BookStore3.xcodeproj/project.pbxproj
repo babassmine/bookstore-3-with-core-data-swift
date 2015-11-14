@@ -15,6 +15,10 @@
 		CE983F1F1BF7CD68000C63FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE983F1D1BF7CD68000C63FB /* LaunchScreen.storyboard */; };
 		CE983F2A1BF7CD68000C63FB /* BookStore3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE983F291BF7CD68000C63FB /* BookStore3Tests.swift */; };
 		CE983F351BF7CD68000C63FB /* BookStore3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE983F341BF7CD68000C63FB /* BookStore3UITests.swift */; };
+		CE983F461BF7DD61000C63FB /* Book+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE983F421BF7DD61000C63FB /* Book+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		CE983F471BF7DD61000C63FB /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE983F431BF7DD61000C63FB /* Book.swift */; settings = {ASSET_TAGS = (); }; };
+		CE983F481BF7DD61000C63FB /* Author+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE983F441BF7DD61000C63FB /* Author+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		CE983F491BF7DD61000C63FB /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE983F451BF7DD61000C63FB /* Author.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		CE983F301BF7CD68000C63FB /* BookStore3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookStore3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE983F341BF7CD68000C63FB /* BookStore3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookStore3UITests.swift; sourceTree = "<group>"; };
 		CE983F361BF7CD68000C63FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE983F421BF7DD61000C63FB /* Book+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Book+CoreDataProperties.swift"; path = "../Book+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CE983F431BF7DD61000C63FB /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Book.swift; path = ../Book.swift; sourceTree = "<group>"; };
+		CE983F441BF7DD61000C63FB /* Author+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Author+CoreDataProperties.swift"; path = "../Author+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CE983F451BF7DD61000C63FB /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Author.swift; path = ../Author.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +108,10 @@
 			isa = PBXGroup;
 			children = (
 				CE983F111BF7CD68000C63FB /* AppDelegate.swift */,
-				CE983F131BF7CD68000C63FB /* ViewController.swift */,
-				CE983F151BF7CD68000C63FB /* Main.storyboard */,
+				CE983F4C1BF7DF0F000C63FB /* Controller */,
+				CE983F4B1BF7DECD000C63FB /* View */,
+				CE983F4A1BF7DEA6000C63FB /* Model */,
 				CE983F1B1BF7CD68000C63FB /* Assets.xcassets */,
-				CE983F1D1BF7CD68000C63FB /* LaunchScreen.storyboard */,
 				CE983F201BF7CD68000C63FB /* Info.plist */,
 				CE983F181BF7CD68000C63FB /* BookStore3.xcdatamodeld */,
 			);
@@ -126,6 +134,34 @@
 				CE983F361BF7CD68000C63FB /* Info.plist */,
 			);
 			path = BookStore3UITests;
+			sourceTree = "<group>";
+		};
+		CE983F4A1BF7DEA6000C63FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE983F431BF7DD61000C63FB /* Book.swift */,
+				CE983F441BF7DD61000C63FB /* Author+CoreDataProperties.swift */,
+				CE983F451BF7DD61000C63FB /* Author.swift */,
+				CE983F421BF7DD61000C63FB /* Book+CoreDataProperties.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CE983F4B1BF7DECD000C63FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE983F151BF7CD68000C63FB /* Main.storyboard */,
+				CE983F1D1BF7CD68000C63FB /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CE983F4C1BF7DF0F000C63FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE983F131BF7CD68000C63FB /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +299,10 @@
 			files = (
 				CE983F141BF7CD68000C63FB /* ViewController.swift in Sources */,
 				CE983F121BF7CD68000C63FB /* AppDelegate.swift in Sources */,
+				CE983F481BF7DD61000C63FB /* Author+CoreDataProperties.swift in Sources */,
+				CE983F461BF7DD61000C63FB /* Book+CoreDataProperties.swift in Sources */,
+				CE983F471BF7DD61000C63FB /* Book.swift in Sources */,
+				CE983F491BF7DD61000C63FB /* Author.swift in Sources */,
 				CE983F1A1BF7CD68000C63FB /* BookStore3.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
